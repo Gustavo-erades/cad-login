@@ -1,21 +1,16 @@
 <?php 
-    $str="google";
-    $letras=array();
-    for($i=0;$i<strlen($str);$i++){
-        $str=strtolower($str);
-        $letra=substr($str,$i,1);
-        if(array_key_exists($letra,$letras)){
-            $letras[$letra]+=1;
-        }else{
-            $letras[$letra]=1;
-        }
+    // algoritmo de ordenação de vetor selection sort 
+    $array=[6,4,9,8];
+    $tamanho_array=sizeof($array)-1;
+    $val_aux=null;
+    for($i=0;$i<=$tamanho_array;$i++){
+       for($j=$i+1;$j<=$tamanho_array;$j++){
+            if($array[$i]>$array[$j]){
+                $val_aux=$array[$j];
+                $array[$j]=$array[$i];
+                $array[$i]=$val_aux;
+            }
+       }
     }
-    print_r($letras);
-    echo "<hr>";
-    foreach($letras as $chave=>$valor){
-        if($valor==1){
-            echo "<br>";
-            echo "A primeira letra sem repetição é: ".strtoupper($chave);
-            break;
-        }
-    }
+    echo implode("-",$array);
+
