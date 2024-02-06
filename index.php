@@ -1,12 +1,10 @@
 <?php 
-    $array=[4,6,2,10];
-    echo implode("-",$array);
-    echo "<br>";
-    $max=sizeof($array)-1;
-    $array2=[];
-    $cont=0;
-    for($i=$max;$i>=0;$i--){
-        $array2[$cont]=$array[$i];
-        $cont++;
+    $array=[4,6,2,10,70,88,99,23,44,32,21,1];
+    $num=32;
+    for($i=0;$i<sizeof($array);$i++){
+        if($array[$i]==$num){
+            echo "achou o número {$num} na posicao ".$i+1;
+            break;
+        }
+        
     }
-    echo implode("-",$array2);
