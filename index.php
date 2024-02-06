@@ -6,5 +6,4 @@
             echo "achou o número {$num} na posicao ".$i+1;
             break;
         }
-        
     }
