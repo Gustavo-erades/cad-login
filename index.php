@@ -1,32 +1,23 @@
 <?php 
-    $array1=[4,8,9,1,3];
-    print_r($array1);
-    echo "<br>";
-    echo implode('-',$array1);
-    echo "<hr>";
-
-    $min=0;
-    $max=sizeof($array1)-1;
-    $tmp=null;
-    while($min<$max){ 
-        $tmp=$array1[$min];
-        $array1[$min]=$array1[$max];
-        $array1[$max]=$tmp;
-        $min++;
-        $max--;
+    $str="Paralelepipedo";
+    $letras=array();
+    for($i=0;$i<strlen($str);$i++){
+        $str=strtolower($str);
+        echo substr($str,$i,1);
+        $letra=substr($str,$i,1);
+        if(array_key_exists($letra,$letras)){
+            $letras[$letra]+=1;
+        }else{
+            $letras[$letra]=1;
+        }
+        echo "<br>";
     }
-    echo implode('-',$array1);
-    echo "<br>";
-    print_r($array1);
+    print_r($letras);
+    foreach($letras as $chave=>$valor){
+        if($valor==1){
+            echo "<br>";
+            echo "A primeira letra sem repetição é: ".strtoupper($chave);
+            break;
+        }
+    }
     
-    /*
-    $posicoes=sizeof($array1)-1;
-    $limite=sizeof($array1)-1;
-    $array2=array($posicoes);
-    for($i=0;$i<=$limite;$i++){ 
-        $array2[$i]=$array1[$posicoes];
-        $posicoes--;
-    }
-    echo implode('-',$array2);
-    echo "<br>";
-    print_r($array2);*/
