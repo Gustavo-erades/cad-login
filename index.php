@@ -1,6 +1,6 @@
 <?php 
     // algoritmo de ordenação de vetor selection sort 
-    $array=[6,4,9,8];
+    $array=[6,4,9,8,34,55,99,2];
     $tamanho_array=sizeof($array)-1;
     $val_aux=null;
     for($i=0;$i<=$tamanho_array;$i++){
