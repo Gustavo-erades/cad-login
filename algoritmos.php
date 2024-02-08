@@ -4,15 +4,15 @@
 // complexidade do binary search: O(log N)
     $array=[11,99,23,44,55,13,10,2,11,2];
     $num=23;
-    //ordena o array usando o select sort
+    //ordena o array usando o bubble sort
     $tamanho_array=sizeof($array)-1;
     $aux=null;
     for($i=0;$i<=$tamanho_array;$i++){
-        for($j=$i+1;$j<=$tamanho_array;$j++){
-            if($array[$i]>$array[$j]){
-                $aux=$array[$j];
-                $array[$j]=$array[$i];
-                $array[$i]=$aux;
+        for($j=0;$j<=$tamanho_array-$i-1;$j++){
+            if($array[$j]>$array[$j+1]){
+                $aux=$array[$j+1];
+                $array[$j+1]=$array[$j];
+                $array[$j]=$aux;
             }
         }
     }
