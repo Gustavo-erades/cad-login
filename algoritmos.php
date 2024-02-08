@@ -39,6 +39,4 @@
     }else{
         echo "Número não encontrado!";
     }
-    
-
 
