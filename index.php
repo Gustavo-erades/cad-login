@@ -14,6 +14,15 @@
                 <img src="./assets/imagens/icone-logo.png" alt="" width="30" height="30">
                 Críticas de cinema
             </a>
+            <div class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">About</a>
+          </li>
+
+            </div>
         </nav>
         <div class="container">
 
