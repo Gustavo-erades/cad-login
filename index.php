@@ -9,8 +9,11 @@
 </head>
 <body>
     <div>
-        <nav>
-
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="" class="navbar-brand">
+                <img src="./assets/imagens/icone-logo.png" alt="" width="30" height="30">
+                Críticas de cinema
+            </a>
         </nav>
         <div class="container">
 
