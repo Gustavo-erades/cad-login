@@ -1,9 +1,27 @@
-<?php 
-    $array=[4,6,2,10,70,88,99,23,44,32,21,1];
-    $num=32;
-    for($i=0;$i<sizeof($array);$i++){
-        if($array[$i]==$num){
-            echo "achou o número {$num} na posicao ".$i+1;
-            break;
-        }
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/imagens/icone-logo.png" type="image/x-icon">
+    <title>Faça sua critica</title>
+</head>
+<body>
+    <div>
+        <nav>
+
+        </nav>
+        <div class="container">
+
+        </div>
+    </div>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
