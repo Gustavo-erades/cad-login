@@ -1,42 +1,38 @@
 <?php 
-//OBS: fazer a mesma coisa mas usando o algoritmo bubble sort
-// merge sort, quick sort, insertion sort, heap sort, tree sort
-// complexidade do binary search: O(log N)
-    $array=[11,99,23,44,55,13,10,2,11,2];
-    $num=23;
-    //ordena o array usando o bubble sort
-    $tamanho_array=sizeof($array)-1;
-    $aux=null;
-    for($i=0;$i<=$tamanho_array;$i++){
-        for($j=0;$j<=$tamanho_array-$i-1;$j++){
-            if($array[$j]>$array[$j+1]){
-                $aux=$array[$j+1];
-                $array[$j+1]=$array[$j];
-                $array[$j]=$aux;
-            }
-        }
-    }
-    echo implode(" | ",$array);
-    echo "<hr>";
-    echo "número procurado: {$num}";
-    echo "<hr>";
-    // aplica o algoritmo de binary search
-    $inicio=0;
-    $fim=9;
-    $flag=false;
-    while(($inicio<=$fim)&&($flag==false)){
+// quick sort, insertion sort, heap sort, tree sort
+// implementando algoritmo merge sort
+$array=[2,22,34,55,16,1,54,102,203,19];
+$inicio=0;
+$fim=sizeof($array)-1;
+function divideArray($array, $inicio, $fim){
+    if($fim-$inicio>1){
         $meio=intval(($inicio+$fim)/2);
-        if($array[$meio]==$num){
-            $flag=true;
-        }elseif($array[$meio]>$num){
-            $fim=$meio-1;
+        divideArray($array,$inicio, $meio);
+        divideArray($array,$meio+1, $fim);
+        merge($array,$inicio,$meio,$fim);
+    }
+}
+function merge($array,$inicio, $meio, $fim){
+    $esquerda=array($meio-$inicio);
+    $direita=array($fim-$meio);
+    $top_direita=0;
+    $top_esquerda=0;
+    for($i=$inicio;$i<=$fim;$i++){
+        if($top_esquerda>=sizeof($esquerda)){
+            $array[$i]=$top_direita;
+            $top_direita++;
+        }elseif($top_direita>=sizeof($direita)){
+            $array[$i]=$top_esquerda;
+            $top_esquerda++;
+        }elseif($esquerda[$top_esquerda]<$direita[$top_direita]){
+            $array[$i]=$esquerda[$top_esquerda];
+            $top_esquerda++;
         }else{
-            $inicio=$meio+1;
+            $array[$i]=$direita[$top_direita];
+            $top_direita++;
         }
     }
-    if($flag){
-        echo "Achou!";
-    }else{
-        echo "Número não encontrado!";
-    }
-
+    
+    echo implode("-",$array);
+}
+echo divideArray($array, $inicio, $fim);
