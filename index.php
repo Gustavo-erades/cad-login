@@ -57,7 +57,7 @@
             </div>
         </div>
     </div>
-    <footer>
+    <footer class="container">
         <span class="lead mb-2 mt-2">
             &copy; development by Gustavo Êrades
         </span>
