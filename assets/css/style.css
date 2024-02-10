@@ -1,15 +1,6 @@
-.btn:focus{
-    box-shadow: none;
-}
-.bg-yellow{
-    background-color: rgb(253, 252, 195);
-}
 body{
     background-color: rgb(251, 249, 146);
 }
-.bg-yellow2{
-    background-color: rgb(251, 249, 146);
-}
-.bg-queimado{
-    background-color: rgb(238, 176, 30);
+.btn:focus{
+    box-shadow: none;
 }
