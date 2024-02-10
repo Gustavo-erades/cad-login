@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap4/css/bootstrap.min.css">
     <link rel="shortcut icon" href="./assets/imagens/icone-logo.png" type="image/x-icon">
     <title>Criticas cinema</title>
 </head>
@@ -11,58 +11,99 @@
     <header class="navbar sticky-top bg-light ">
         <nav class="container">
             <a href="" class="navbar-brand">
-                Críticas de cinema
+                sua crítica
             </a>
-            <button class="btn btn-outline-success me-2">
-                give your opnion
+            <button class="btn btn-outline-secondary me-2">
+                dê sua opnião
             </button>
         </nav>
     </header>
     <div class="container mt-3">
         <div>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, sed ducimus sunt inventore commodi nisi obcaecati aliquid quisquam qui! Porro inventore perferendis dignissimos ipsum, veritatis omnis a et vero aliquam.</p>
-            <p class="lead">Officia maiores saepe quae, eum beatae esse sequi iste? Molestiae nihil perspiciatis cupiditate similique blanditiis! Perspiciatis labore quam distinctio maiores, omnis ipsum dolore enim? Eum molestias est laboriosam excepturi omnis!</p>
-            <p class="lead">Velit perferendis facilis tenetur dolorum cumque minima explicabo eius dolor, ipsam deleniti assumenda rem quaerat autem. Excepturi suscipit possimus sequi perspiciatis exercitationem consequuntur minus nisi quibusdam, voluptas aspernatur tempore totam?</p>
+            <p class="display-4 text-danger">
+                Faça parte dessa comunidade de apaixonados por cinema!
+            </p>
+            <p class="lead"><strong>Assistiu a um filme recentemente e quer compartilhar sua opinião?</strong>Aqui está sua chance! No nosso site de críticas de cinema, valorizamos suas opiniões e perspectivas. Sua crítica pode ajudar outros espectadores a decidir se devem ou não assistir ao filme. Todos têm gostos e preferências diferentes, e é isso que torna cada crítica valiosa. Então, <strong>não hesite, compartilhe sua opinião e ajude a comunidade cinematográfica a crescer!</strong></p>
+
+            <p class="lead"><strong>Não importa se você amou ou odiou o filme, sua crítica é bem-vinda</strong>. Cada opinião contribui para a diversidade de pontos de vista em nossa plataforma. Além disso, suas críticas podem fornecer insights valiosos para os produtores e diretores, ajudando-os a entender melhor o que funciona e o que não funciona em suas produções. Então, <strong>não subestime o poder de sua voz</strong> - ela pode ter um impacto significativo na indústria cinematográfica.</p>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-6 mb-3 mb-md-0">
-                <div class="card text-bg-light">
-                    <div class="card-body">
-                        <h4 class="card-tittle">
-                            lorem tittle
-                        </h4>
-                        <div class="card-text">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate sed soluta qui adipisci hic accusamus illo! Cum eaque esse earum labore laborum sapiente amet ducimus quae. A dolore quae ratione?
+        <div class="bg-light shadow-sm p-2 pb-3">
+            <div class="text-center">
+                <h2 class="display-4">últimas críticas</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-3 mb-md-0">
+                    <div class="card text-bg-white">
+                        <div class="card-body">
+                            <h4 class="card-tittle">
+                                Gustavo Êrades
+                            </h4>
+                            <div class="card-text">
+                               Avisem Scorsese... Achamos o cinema!
+                            </div>
+                            <div class="card-text text-muted" id="dia_critica">
+                                 Garfield 2- 10/02/2024
+                            </div>
+                            <button class="btn btn-outline-secondary mt-2">
+                                Ver crítica
+                            </button>
                         </div>
-                        <button class="btn btn-outline-primary mt-2">
-                            go to somewhere
-                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-3 mb-md-0">
+                    <div class="card text-bg-white">
+                        <div class="card-body">
+                            <h4 class="card-tittle">
+                                Manoel Caneta Azul
+                            </h4>
+                            <div class="card-text">
+                                É bom demaizi meus amigos...
+                            </div>
+                            <div class="card-text text-muted" id="dia_critica">
+                                Tá Dando Onda- 09/02/2024
+                            </div>
+                            <button class="btn btn-outline-secondary mt-2">
+                                Ver crítica
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 mb-3 mb-md-0">
-                <div class="card text-bg-light">
-                    <div class="card-body">
-                        <h4 class="card-tittle">
-                            lorem tittle
-                        </h4>
-                        <div class="card-text">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate sed soluta qui adipisci hic accusamus illo! Cum eaque esse earum labore laborum sapiente amet ducimus quae. A dolore quae ratione?
-                        </div>
-                        <button class="btn btn-outline-warning mt-2">
-                            go to somewhere
-                        </button>
-                    </div>
+        </div>
+        <div class="mt-3">
+            <blockquote  class="blockquote text-right">
+                    <p class="lead">
+                        <strong>
+                            " Lembre-se de que a crítica construtiva é fundamental. Ao expressar sua opinião, seja honesto e objetivo, fornecendo argumentos sólidos para apoiar seus pontos de vista. Evite ataques pessoais e foque na análise do filme em si. Ao fazer isso, você não apenas enriquece o debate sobre cinema, mas também promove uma cultura de respeito e aprendizado mútuo."
+                        </strong>
+                    </p>
+                   <footer class="blockquote-footer">
+                        <cite>Chat GPT-3</cite>
+                   </footer>
+            </blockquote>
+        </div>
+        <div class="carousel slide text-center bg-light shadow-sm mb-3" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h1 class="h3 d-none d-md-block text-primary">Milhares de filmes, milhares de opniões</h1>
+                    <h1 class="h3 d-block d-md-none text-danger">somos apaixonados por cinema</h1>
+                </div>
+                <div class="carousel-item">
+                    <h1 class="h3 text-warning">Aqui todo mundo é crítico</h1>
+                </div>
+                <div class="carousel-item">
+                    <h1 class="h3 text-success">Isso é absolutamente cinema</h1>
                 </div>
             </div>
         </div>
+        <footer class="text-center">
+            <p class="lead mb-2 mt-2 text-muted">
+                &copy; development by Gustavo Êrades
+            </p>
+        </footer>
     </div>
-    <footer class="container">
-        <span class="lead mb-2 mt-2">
-            &copy; development by Gustavo Êrades
-        </span>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
-"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="./assets/bootstrap4/js/bootstrap.min.js"></script>
 </body>
 </html>
