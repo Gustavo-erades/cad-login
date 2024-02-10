@@ -30,7 +30,10 @@
         </div>
         <div class="bg-light shadow-sm p-2 pb-3">
             <div class="text-center">
-                <h2 class="display-4">últimas críticas</h2>
+                <h2 class="display-4">
+                    últimas críticas
+                    <img src="./assets/imagens/icone-logo-gif.gif" alt="">
+                </h2>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 mb-3 mb-md-0">
