@@ -5,39 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/bootstrap4/css/bootstrap.min.css">
     <link rel="shortcut icon" href="./assets/imagens/icone-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Sua Crítica</title>
 </head>
 <body>
-    <header class="navbar sticky-top bg-light ">
+    <header class="navbar sticky-top bg-dark ">
         <nav class="container">
-            <a href="" class="navbar-brand text-dark">
-                <img width="30" height="30" src="https://img.icons8.com/ios/50/000000/film-reel--v2.png" alt="film-reel--v2"/>
+            <a href="" class="navbar-brand text-warning">
+                <img width="30" height="30" src="./assets/imagens/icone-logo-amarelo.png"/>
                 sua crítica
             </a>
-            <button class="btn btn-outline-danger me-2">
+            <button class="btn btn-outline-warning me-2">
                 dê sua opnião
             </button>
         </nav>
     </header>
     <div class="container mt-3">
         <div>
-            <p class="display-4 text-danger">
-                Faça parte dessa comunidade de apaixonados por cinema!
-            </p>
-            <p class="lead"><strong>Assistiu a um filme recentemente e quer compartilhar sua opinião?</strong>Aqui está sua chance! No nosso site de críticas de cinema, valorizamos suas opiniões e perspectivas. Sua crítica pode ajudar outros espectadores a decidir se devem ou não assistir ao filme. Todos têm gostos e preferências diferentes, e é isso que torna cada crítica valiosa. Então, <strong>não hesite, compartilhe sua opinião e ajude a comunidade cinematográfica a crescer!</strong></p>
+            <div class="bg-warning p-2">
+                <p class="display-4 text-dark">
+                    Faça parte dessa comunidade de apaixonados por cinema!
+                </p>
+            </div>
+            <div class="p-3">
+                <p class="lead"><strong>Assistiu a um filme recentemente e quer compartilhar sua opinião?</strong>Aqui está sua chance! No nosso site de críticas de cinema, valorizamos suas opiniões e perspectivas. Sua crítica pode ajudar outros espectadores a decidir se devem ou não assistir ao filme. Todos têm gostos e preferências diferentes, e é isso que torna cada crítica valiosa. Então, <strong>não hesite, compartilhe sua opinião e ajude a comunidade cinematográfica a crescer!</strong></p>
 
-            <p class="lead"><strong>Não importa se você amou ou odiou o filme, sua crítica é bem-vinda</strong>. Cada opinião contribui para a diversidade de pontos de vista em nossa plataforma. Além disso, suas críticas podem fornecer insights valiosos para os produtores e diretores, ajudando-os a entender melhor o que funciona e o que não funciona em suas produções. Então, <strong>não subestime o poder de sua voz</strong> - ela pode ter um impacto significativo na indústria cinematográfica.</p>
+                <p class="lead"><strong>Não importa se você amou ou odiou o filme, sua crítica é bem-vinda</strong>. Cada opinião contribui para a diversidade de pontos de vista em nossa plataforma. Além disso, suas críticas podem fornecer insights valiosos para os produtores e diretores, ajudando-os a entender melhor o que funciona e o que não funciona em suas produções. Então, <strong>não subestime o poder de sua voz</strong> - ela pode ter um impacto significativo na indústria cinematográfica.</p>
+            </div>
         </div>
-        <div class="bg-light shadow-sm p-2 pb-3">
+        <div class="p-2 pb-3 bg-warning">
             <div class="text-center">
-                <h2 class="display-4">
+                <h2 class="display-4 text-dark">
                     últimas críticas
-                    <img src="./assets/imagens/icone-logo-gif.gif" alt="">
                 </h2>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 mb-3 mb-md-0">
-                    <div class="card text-bg-white">
+                    <div class="card bg-dark text-light shadow-sm">
                         <div class="card-body">
                             <h4 class="card-tittle">
                                 Gustavo Êrades
@@ -48,14 +52,14 @@
                             <div class="card-text text-muted" id="dia_critica">
                                  Garfield 2- 10/02/2024
                             </div>
-                            <button class="btn btn-outline-danger mt-2">
+                            <button class="btn btn-outline-warning mt-2">
                                 Ver crítica
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mb-3 mb-md-0">
-                    <div class="card text-bg-white">
+                    <div class="card bg-dark text-light shadow-sm">
                         <div class="card-body">
                             <h4 class="card-tittle">
                                 Manoel Caneta Azul
@@ -66,7 +70,7 @@
                             <div class="card-text text-muted" id="dia_critica">
                                 Tá Dando Onda- 09/02/2024
                             </div>
-                            <button class="btn btn-outline-danger mt-2">
+                            <button class="btn btn-outline-warning mt-2">
                                 Ver crítica
                             </button>
                         </div>
@@ -86,17 +90,17 @@
                    </footer>
             </blockquote>
         </div>
-        <div class="carousel slide text-center bg-light shadow-sm mb-3" data-ride="carousel">
+        <div class="carousel slide text-center bg-dark text-light shadow-sm mb-3 p-2" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <h1 class="h3 d-none d-md-block text-primary">Milhares de filmes, milhares de opniões</h1>
-                    <h1 class="h3 d-block d-md-none text-danger">somos apaixonados por cinema</h1>
+                    <h1 class="h3 d-none d-md-block">Milhares de filmes, milhares de opniões</h1>
+                    <h1 class="h3 d-block d-md-none">somos apaixonados por cinema</h1>
                 </div>
                 <div class="carousel-item">
-                    <h1 class="h3 text-warning">Aqui todo mundo é crítico</h1>
+                    <h1 class="h3">Aqui todo mundo é crítico</h1>
                 </div>
                 <div class="carousel-item">
-                    <h1 class="h3 text-success">Isso é absolutamente cinema</h1>
+                    <h1 class="h3">Isso é absolutamente cinema</h1>
                 </div>
             </div>
         </div>
