@@ -1,55 +1,33 @@
 <?php 
 // merge sort, quick sort, insertion sort, heap sort, tree sort
-// implementando algoritmo merge sort
-$array=[2,22,34,55,16,1,54,102,203,19];
+// implementando o algoritmo quick sort
+$array=[99,2,15,27,32,4,16,19,88,54,13,1];
 $inicio=0;
 $fim=sizeof($array)-1;
-function imprimir($array){
-    echo implode("-",$array);
-}
-function merge_sort($array,$inicio,$fim){
-    $array_aux= array();
+function quicksort($array,$inicio,$fim){
     if($inicio<$fim){
-        $meio=intval(($inicio+$fim)/2);
-        //recursividade
-        merge_sort($array,$inicio,$meio);
-        merge_sort($array,$meio+1,$fim);
-        //merge
-        $esquerda=$inicio;
-        $direita=$meio+1;
-        $val_aux=$inicio;
-        while($esquerda<=$meio && $direita<=$fim){
-            if($array[$esquerda]<$array[$direita]){
-                $array_aux[$val_aux]=$array[$esquerda];
-                $esquerda++;
-            }else{
-                $array_aux[$val_aux]=$array[$direita];
-                $direita++;
-            }
-            $val_aux++;
-        }
-        while($esquerda<=$meio){
-            $array_aux[$val_aux]=$array[$esquerda];
-            $esquerda++;
-            $val_aux++;
-        }
-        while($direita<=$fim){
-            $array_aux[$val_aux]=$array[$direita];
-            $direita++;
-            $val_aux++;
-        }
-        for($i=$inicio;$i<=$fim;$i++){
-            $array[$i]=$array_aux[$i];
+        $pivo=partition($array,$inicio,$fim);
+        quicksort($array,$inicio,$pivo-1);
+        quicksort($array,$pivo+1,$fim);
+    }
+}
+function partition($array,$inicio,$fim){
+    $pivot=$array[$fim];
+    $i=$inicio;
+    $aux=null;
+    for($j=$inicio;$j<$fim;$j++){
+        if($array[$j]<=$pivot){
+            $aux=$array[$j];
+            $array[$j]=$array[$i];
+            $array[$i]=$aux;
+            $i++;
         }
     }
-    
+    $aux=$array[$i];
+    $array[$i]=$array[$fim];
+    $array[$fim]=$aux;
+    return $i;
 }
-imprimir($array);
+echo implode(" ",$array);
 echo "<hr>";
-merge_sort($array,$inicio,$fim);
-imprimir($array);
-/*$array_aux[0]="oi";
-print_r($array_aux);
-for($i=0;$i<sizeof($array_aux);$i++){
-    echo $array_aux[$i];
-}*/
+echo quicksort($array,$inicio,$fim);
