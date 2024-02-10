@@ -1,10 +1,9 @@
 <?php 
-// merge sort, quick sort, insertion sort, heap sort, tree sort
-// implementando o algoritmo quick sort
+// merge sort, quick sort,  heap sort, tree sort
+// implementando o algoritmo insertion sort
 $array=[99,2,15,27,32,4,16,19,88,54,13,1];
 $tamanho=sizeof($array);
 $aux=null;
-
 echo implode(" ",$array);
 echo "<hr>";
 for($i=1;$i<$tamanho;$i++){
