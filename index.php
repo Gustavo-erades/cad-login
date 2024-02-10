@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/bootstrap4/css/bootstrap.min.css">
     <link rel="shortcut icon" href="./assets/imagens/icone-logo.png" type="image/x-icon">
-    <title>Criticas cinema</title>
+    <title>Sua Crítica</title>
 </head>
 <body>
     <header class="navbar sticky-top bg-light ">
         <nav class="container">
-            <a href="" class="navbar-brand">
+            <a href="" class="navbar-brand text-dark">
+                <img width="30" height="30" src="https://img.icons8.com/ios/50/000000/film-reel--v2.png" alt="film-reel--v2"/>
                 sua crítica
             </a>
-            <button class="btn btn-outline-secondary me-2">
+            <button class="btn btn-outline-danger me-2">
                 dê sua opnião
             </button>
         </nav>
@@ -44,7 +45,7 @@
                             <div class="card-text text-muted" id="dia_critica">
                                  Garfield 2- 10/02/2024
                             </div>
-                            <button class="btn btn-outline-secondary mt-2">
+                            <button class="btn btn-outline-danger mt-2">
                                 Ver crítica
                             </button>
                         </div>
@@ -62,7 +63,7 @@
                             <div class="card-text text-muted" id="dia_critica">
                                 Tá Dando Onda- 09/02/2024
                             </div>
-                            <button class="btn btn-outline-secondary mt-2">
+                            <button class="btn btn-outline-danger mt-2">
                                 Ver crítica
                             </button>
                         </div>
