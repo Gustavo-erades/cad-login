@@ -1,0 +1,37 @@
+span.card{
+    padding: 20px 12px;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    border-radius: 8px;
+}
+span.card .form-control{
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    background-color: #F8F9FA;
+}
+span.card .form-control:focus{
+    background-color: rgb(251, 249, 146);
+    box-shadow: none;
+    border-color:#FFC107;
+}
+span.card div.links{
+    margin-top: 10px;
+}
+span.card label{
+    text-transform: uppercase;
+}
+form .btn{
+    background-color: #343A40;
+    color:#FFC107;
+}
+form .btn:hover{
+    background-color: #FFC107;
+    color: #343A40;
+}
+form .btn:focus{
+    box-shadow:0 4px 8px 0 #343A40;
+}
+form{
+    margin-top: 30px;
+}
