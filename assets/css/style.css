@@ -4,3 +4,13 @@ body{
 .btn:focus{
     box-shadow: none;
 }
+a{
+    text-decoration: none;
+}
+button.btn-outline-warning a:hover{
+    text-decoration: none;
+    color:#343A40;
+}
+button.btn-outline-warning a{
+    color:#FFC107;
+}
