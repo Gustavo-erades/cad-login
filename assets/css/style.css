@@ -6,6 +6,7 @@ body{
 }
 a{
     text-decoration: none;
+    cursor:pointer;
 }
 button.btn-outline-warning a:hover{
     text-decoration: none;
