@@ -14,7 +14,12 @@ span.card .form-control:focus{
     background-color: rgb(251, 249, 146);
     box-shadow: none;
     border-color:#FFC107;
-}
+}/*
+span.card .form-control:invalid{
+    background-color: rgb(255, 190, 190);
+    box-shadow: none;
+    border-color:#ff4f4f;
+}*/
 span.card div.links{
     margin-top: 10px;
 }
@@ -35,3 +40,6 @@ form .btn:focus{
 form{
     margin-top: 30px;
 }
+div#erros_senha p{
+    font-weight: bold;
+} 
