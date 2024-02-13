@@ -23,7 +23,7 @@
             <span class="card bg-dark text-warning d-inline-block shadow">
                 <div>
                     <label for="email" class="d-block text-left">E-mail</label>
-                    <input type="email" id="email" value=" " class="form-control" placeholder="usuario@dominio.com" required pattern="/^[A-z\.\-]+@([A-z]+\.)+[A-z]{2,}$" onkeyup="loginRegexEmail()" autocomplete="email">
+                    <input type="email" id="email" value=" " class="form-control" placeholder="usuario@dominio.com" required  onkeyup="loginRegexEmail()" pattern="^[A-z\.\-]+@([A-z]+\.)+[A-z]+$" autocomplete="email">
                 </div>
                 <div>
                     <label for="senha" class="d-block text-left">Senha</label>
