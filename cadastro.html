@@ -3,9 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap4/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./assets/imagens/icone-logo-amarelo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/styleLogin.css">
     <title>Sua Crítica - Cadastro</title>
 </head>
 <body>
-    <h1>Cadastro</h1>
+    <header class="navbar sticky-top bg-dark ">
+        <nav class="container">
+            <a href="" class="navbar-brand text-warning">
+                <img width="30" height="30" src="./assets/imagens/icone-logo-amarelo.png"/>
+                sua crítica
+            </a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="text-center mt-3 text-danger d-none" id="erros_senha">
+            <p id="erro_login">As senhas não coferem. Por favor, tente novamente</p>
+        </div>
+        <form class="text-center form-group">
+            <span class="card bg-dark text-warning d-inline-block shadow">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <label for="nome" class="d-block text-left">Nome</label>
+                        <input type="text" required id="nome" placeholder="nome Completo" class="form-control" onkeyup="cadNome()">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="email" class="d-block text-left">E-mail</label>
+                        <input type="email" id="email"  class="form-control" placeholder="usuario@dominio.com" required onkeyup="loginRegexEmail()" pattern="^[A-z\.\-]+@([A-z]+\.)+[A-z]+$" autocomplete="email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <label for="nickname" class="d-block text-left">Nickname</label>
+                        <input type="text" required id="nickname" placeholder="nome no site" class="form-control" onkeyup="cadNick()">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="dt_nasc" class="d-block text-left">Data de nascimento</label>
+                        <input type="date" id="dt_nasc" class="form-control" onchange="cadDtNasc()">
+                    </div>
+                </div>
+                <div>
+                    <label for="senha" class="d-block text-left">Senha</label>
+                    <input type="password" id="senha" class="form-control" placeholder="********" required minlength="8" autocomplete="current-password" onkeyup=" loginRegexSenha()">
+                </div>
+                <div>
+                    <label for="rpetir_senha" class="d-block text-left">Confirme a senha</label>
+                    <input type="password" id="repetir_senha" class="form-control" placeholder="********" required minlength="8" autocomplete="current-password" onkeyup="repetirSenha()">
+                </div>
+                <div class="text-light links row">
+                    <span class="col-12 col-md-6 text-left pr-3">
+                        Leia os <a class="text-warning" href="./assets/imagens/pipoca.png" download="imagem.png">Termos de uso</a>
+                    </span>
+                    <span class="col-12 col-md-6 text-md-right pl-3 text-left">
+                        já possui cadastro? <a class="text-warning" onclick="chamarPagina('login.html')">Faça login</a>
+                    </span>
+                    
+                </div>
+            </span>
+            <div class="text-center">
+                <button class="btn btn-lg">
+                    Cadastrar
+                </button>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="./assets/bootstrap4/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script_inputs.js"></script>
+    <script src="./assets/js/script_inputs_cad.js"></script>
+    <script src="./assets/js/loadingAjax.js"></script>
+
 </body>
 </html>
