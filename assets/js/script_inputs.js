@@ -1,9 +1,8 @@
 const input_email=document.querySelector('#email');
 const input_senha=document.querySelector('#senha');
+const patternEmail1=/^[A-z0-9]+[@]{1}[A-z0-9]+[.]+[A-z.]+$/;
 function loginRegexEmail(){
-    console.log("length: "+input_email.length);
-    console.log("value: "+input_email.value);
-    if(input_email.value!=""){
+    if(patternEmail1.exec(input_email.value)!=null){
         input_email.style.backgroundColor="rgb(234, 255, 190)";
         input_email.style.borderColor="#b0ff4f";
     }else{
