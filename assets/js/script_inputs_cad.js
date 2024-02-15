@@ -4,8 +4,8 @@ const input_nickname=document.querySelector('#nickname');
 const input_dt_nasc=document.querySelector('#dt_nasc');
 const input_repetir_senha=document.querySelector('#repetir_senha');
 //patterns regex
-const regexNome=/^[A-z]+$/;
-const regexNick=/^[A-z0-9\.\-\@\$\%\&\*\(\)\!\#]+/;
+const regexNome=/^[A-zÀ-ü]+$/;
+const regexNick=/^[A-z0-9\D]+/;
 
 function cadNome(){
     if(regexNome.exec(input_nome.value)!=null){
