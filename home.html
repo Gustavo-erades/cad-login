@@ -17,15 +17,15 @@
             </a>
             <div>
                 <ul class="navbar nav">
-                    <li class="nav-item nav-link active"><a>Home</a></li>
-                    <li class="nav-item nav-link"><a>Filmes</a></li>
-                    <li class="nav-item nav-link"><a>Minhas críticas</a></li>
+                    <li class="nav-item nav-link active"><a onclick="chamarPagina2('home.html')">Home</a></li>
+                    <li class="nav-item nav-link"><a onclick="chamarPagina2('filmes.html')">Filmes</a></li>
+                    <li class="nav-item nav-link"><a onclick="chamarPagina2('minhasCriticas.html')">Minhas críticas</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <div class="container">
-        <div class="conteudo">
+        <div id="conteudo">
             <form>
                 <span class="lead">Procure um filme:</span>
                 <input type="text" class="form-control" onkeyup="searchHints(this.value)">  
