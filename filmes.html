@@ -1,9 +1,17 @@
+<form>
+    <span class="lead">Procure um filme:</span>
+    <input type="text" class="form-control" onkeyup="searchHints(this.value)">  
+</form>
+<div>
+    <p>Sugestões:<span id="hints" class="lead"></span></p>
+</div>
 <div>
     <h1>Filmes</h1>
     <hr>
-    <p class="textos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, et vel. Aut id aliquam repellendus iste eius, adipisci temporibus quod accusamus et modi minima ab delectus fugiat doloremque cupiditate ullam?</p>
-    <p class="textos">Tempore ex non dolor ut veritatis? Autem voluptatibus libero aspernatur, esse, id illum quibusdam placeat nisi, velit impedit error cum quidem commodi? Maiores laborum, quod magnam numquam mollitia eum aliquam.</p>
-    <p class="textos">Repellat reprehenderit autem exercitationem quos cumque ducimus adipisci ut, fugiat illo alias numquam et temporibus maxime laudantium. Id consequuntur, vel blanditiis sequi dicta accusantium eligendi voluptates minima, possimus, impedit dignissimos.</p>
-    <p class="textos">Laudantium modi eos distinctio porro recusandae facilis eius provident, omnis ducimus hic illum nam voluptatum aut officia, aliquam vel neque nobis repellendus dolorum sit ab expedita ut commodi. Id, sequi?</p>
-    <p class="textos">Voluptatem, quo reprehenderit necessitatibus atque reiciendis vitae mollitia aut! Repellendus, minima deleniti ut, eaque hic cupiditate atque velit, harum assumenda excepturi voluptatum itaque provident impedit tempora recusandae? Amet, magni atque.</p>
+    <button class="btn btn-outline-warning" onclick="listarFilmes()">
+        Listar Filmes
+    </button>
+    <div id="filmesXml">
+
+    </div>
 </div>
