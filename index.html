@@ -133,8 +133,11 @@
             }
             ajax.open("GET","teste.php?txt="+num);
             ajax.send();
-           num+=1;
-           console.log("\n"+num);
+            if(num==35){
+                num=0;
+            }else{
+                num+=1;
+            }
         }, 10000); //10 segundos
     </script>
 </body>
