@@ -10,15 +10,15 @@ function chamarPagina(url){
     }
     ajax.send()
 }
-function chamarPagina2(url){
+function chamarConteudo(url){
     const ajax= new XMLHttpRequest();
-    ajax.open('GET', url);
-    ajax.onreadystatechange = () => {
-       if(ajax.readyState==4 && ajax.status==200){
-        document.querySelector("#conteudo").innerHTML='teste.html';
-       }else if(ajax.status==404){
-        window.location.href='erro404.html';
-       }
-    }
-    ajax.send()
+    ajax.open('GET',url);
+    ajax.onreadystatechange=()=>{
+        if(ajax.readyState==4 && ajax.status==200){
+            document.querySelector("#conteudo-textos").innerHTML=ajax.responseText;
+        }else if(ajax.status==404){
+            window.location.href="erro404.html";
+        }
+    };
+    ajax.send();
 }

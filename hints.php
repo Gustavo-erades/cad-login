@@ -39,9 +39,9 @@
    $hints=""; 
    if($txt!=""){
         $txt=strtolower($txt);
-        $len=strlen($txt); //2
+        $len=strlen($txt); 
         foreach($arrayHints as $nomes){
-            if(stristr($txt,substr($nomes,0,$len))){ //Gunda
+            if(stristr($txt,substr($nomes,0,$len))){ 
                 if($hints==""){
                     $hints=$nomes;
                 }else{
