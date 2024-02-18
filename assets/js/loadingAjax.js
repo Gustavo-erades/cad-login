@@ -27,10 +27,15 @@ function listarFilmes(){
     ajax.open('GET','filmes.xml',true);
     ajax.onreadystatechange=()=>{
         if(ajax.readyState==4 && ajax.status==200){
-            const xmlTexto=ajax.responseText;
+            const xmlTexto=ajax.responseXML;
+           /* const xmlTexto=ajax.responsetext;
             const parser = new DOMParser();
-            const xmlDoc=parser.parseFromString(xmlTexto,'text/xml');
-            console.log(xmlDoc);
+            const xmlDoc=parser.parseFromString(xmlTexto,'text/xml');*/
+            const jsonDoc=xmlToJson(xmlTexto);
+            /*console.log(xmlTexto.getElementsByTagName("filme"))*/
+            for(let i in jsonDoc['filmes']['filme']){
+                console.log(jsonDoc['filmes']['filme'][i]);
+            }
         }
     }
     ajax.send();
